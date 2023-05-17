@@ -6,5 +6,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-movies';
+  title = 'any value';
+
+  movie = {
+    title: 'Spider-man',
+    releaseDate: new Date(),
+    price: 1400.99
+  }
+
+  handleClick() {
+    console.log('Hello world');
+  }
+
+  duplicateNumber(n: number){
+    return n*2;
+  }
+
+  getDebugger() {
+    // Normal comment
+    // TODO: I will fix this later
+
+    let a = 'wow debugger';
+    console.log('hello world: ' + a);
+  }
+
 }
